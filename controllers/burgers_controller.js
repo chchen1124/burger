@@ -16,11 +16,12 @@ router.get("/", function(req, res) {
   });
 });
 
+
 router.post("/", function(req, res) {
   my_burger.create([
-    "burger_name", "the_date"
+    "burger_name", "devoured"
   ], [
-    req.body.burger_name, req.body.the_date
+    req.body.burger_name, req.body.devoured
   ], function() {
     res.redirect("/");
   });

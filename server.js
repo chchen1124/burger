@@ -8,7 +8,7 @@ var routes = require("./controllers/burgers_controller.js");
 var app = express();
 var port = 3000;
 
-app.use("/", routes);
+
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
@@ -22,8 +22,8 @@ var exphbs = require("express-handlebars");
 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
-
-var mysql = require("mysql");
+app.use("/", routes);
+/*var mysql = require("mysql");
 
 var connection = mysql.createConnection({
   host: "localhost",
@@ -73,7 +73,7 @@ app.put("/:id", function(req, res) {
 
     res.redirect("/");
   });
-});
+});*/
 
 app.listen(port, function() {
   console.log("Listening on PORT " + port);

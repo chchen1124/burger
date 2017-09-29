@@ -7,7 +7,7 @@ use burgers_db;
 CREATE TABLE burgers
 (
 	id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
-	burger_name VARCHAR(30) NOT NULL,
-	devoured bool DEFAULT false NOT NULL,
-	the_date date NOT NULL
+	burger_name VARCHAR(30),
+	devoured bool DEFAULT false,
+	the_date date
 );
