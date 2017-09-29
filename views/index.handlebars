@@ -9,13 +9,12 @@
 
 <body>
   <div class="jumbotron">
-  <div class="row">
-
-  <h1>Eat Da Burger!</h1>
-
-  <img id="burger_img" src="assets/img/burger.jpg" />
+    <div class="row">
+      <h1>Eat Da Burger!</h1>
+      <img id="burger_img" src="assets/img/burger.jpg" />
+    </div>
   </div>
-  </div>
+
   <div class="container">
     <div class="row">
 
@@ -30,7 +29,8 @@
           <li>
             {{this.burger_name}}
 
-            <form action="/{{this.id}}?_method=PUT">
+            <form action="/{{this.id}}?_method=PUT" method="POST">
+            <!--<form class="update-burger" method="PUT" >-->
               <input type="hidden" name="devoured" value="true">
               <button style="color:blue;font-weight:bold" type="submit">EAT IT!</button>
             </form>
@@ -55,17 +55,19 @@
     </div>
     </div>
   </div>
+
   <div class="footer">
     <h2>Add a Burger</h2>
     <form class="create-update-form" method="POST">
 
       <div class="form-group">
-        <label for="ca">Burger Name:</label>
+        <label for="burger_name">Burger Name:</label>
         <input type="text" id="burger_name" placeholder="Burger Name" name="burger_name">
-        <input type="hidden" name="devoured" value="false">
+        <!--<input type="hidden" name="devoured" value="false">-->
       </div>
 
       <button id="burger-submit" type="submit">Add Burger</button>
     </form>
   </div>
+
 </body>
