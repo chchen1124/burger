@@ -30,7 +30,7 @@
           <li>
             {{this.burger_name}}
 
-            <form action="/{{this.id}}?_method=PUT" method="POST">
+            <form action="/{{this.id}}?_method=PUT">
               <input type="hidden" name="devoured" value="true">
               <button style="color:blue;font-weight:bold" type="submit">EAT IT!</button>
             </form>
@@ -57,7 +57,7 @@
   </div>
   <div class="footer">
     <h2>Add a Burger</h2>
-    <form class="create-update-form" action="/?_method=POST" method="POST">
+    <form class="create-update-form" method="POST">
 
       <div class="form-group">
         <label for="ca">Burger Name:</label>
