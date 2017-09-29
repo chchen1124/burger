@@ -1,0 +1,1 @@
+INSERT INTO burgers (burger_name,the_date) values('Blammy Burger','2016-05-24'),('Flippity French Fries','2015-06-02'),('Snazzy Salad','2014-04-07');

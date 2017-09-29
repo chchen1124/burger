@@ -1,0 +1,72 @@
+body
+{
+  background: yellow;
+}
+
+.container {
+  padding-right: 300px;
+  padding-bottom: 300px;
+  margin-left: 300px;
+  margin-right:300px; 
+  background-color: #e8f9ff;
+}
+
+h1,h2{
+  text-align: center;
+  font-family: Shrikhand,cursive;
+  color: lime;
+}
+
+img{
+  margin-left: 150px;
+  padding-left: 550px;
+  text-align: center;  
+}
+
+.cool-font {
+  font-family: Shrikhand, cursive;
+  font-size: 24px;
+  color: #1da1f2;
+}
+
+.jumbotron {
+  font-family: Shrikhand, cursive;
+  color: yellow;
+  background-color: lime;
+}
+
+.footer{
+  background-color:teal;
+}
+
+input,
+textarea {
+  margin: 20px;
+}
+
+#burger-submit {
+  margin: 10px;
+  font-family: Shrikhand, cursive;
+  color: blue;
+  border-color: #1da1f2;
+  border-style: solid;
+  border-width: 2px;
+}
+
+li{
+  color: red;
+}
+
+#burger-area{
+  padding-bottom: 300px;
+}
+
+#burger-eaten-area
+{
+  padding-bottom: 300px;
+}
+
+p {
+  margin: 0;
+  font-size: 16px;
+}
